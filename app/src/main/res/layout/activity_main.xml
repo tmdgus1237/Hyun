@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#FAECC5"
+    tools:context="com.mybluemix.bluemixb.random_grid_layout.MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_score"
+            android:gravity="center"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="SCORE : 0"
+            android:textSize="20dp"
+            />
+        <TextView
+            android:id="@+id/tv_combo"
+            android:gravity="center"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="COMBO : 0"
+            android:textSize="20dp"
+            />
+
+    </LinearLayout>
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="0dp"
+    android:layout_weight="1"
+    android:orientation="horizontal"
+    >
+    <Button
+        android:id="@+id/btn_exit"
+        android:gravity="center"
+        android:layout_width="100dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:text="EXIT"
+        android:background="#FAE0D4"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        />
+    <Button
+        android:id="@+id/btn_reset"
+        android:gravity="center"
+        android:layout_width="100dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:text="RESET"
+        android:background="#FAE0D4"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        />
+</LinearLayout>
+
+    <GridLayout
+        android:id="@+id/btn_container"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="8"
+        android:columnCount="3"
+        android:rowCount="3"
+        android:layout_margin="20dp"
+        >
+
+    </GridLayout>
+
+
+</LinearLayout>
